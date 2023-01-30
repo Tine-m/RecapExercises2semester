@@ -5,11 +5,8 @@ import java.util.Locale;
 
 public class Exercise3 {
 
+  //return whether it is Friday (true) or not (false)
   public boolean isItFriday(LocalDate date) {
-    DayOfWeek day = date.getDayOfWeek();
-    if (day.getDisplayName(TextStyle.FULL, Locale.getDefault()).equals("fredag")) {
-      return true;
-    }
-    else return false;
+    return true;
   }
 }

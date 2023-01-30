@@ -14,25 +14,25 @@ class Exercise4Test {
 
   @Test
   public void removeNoWords() {
-    String actual = ex4.removeBadword("Det er godt");
+    String actual = ex4.exchangeBadword("Det er godt");
     assertEquals("Det er godt", actual);
   }
 
   @Test
   public void removeSgu() {
-    String actual = ex4.removeBadword("Det er sgu ikke godt");
+    String actual = ex4.exchangeBadword("Det er sgu ikke godt");
     assertEquals("Det er sandelig ikke godt", actual);
   }
 
   @Test
   public void removeFandeme() {
-    String actual = ex4.removeBadword("Det er fandeme ikke godt");
+    String actual = ex4.exchangeBadword("Det er fandeme ikke godt");
     assertEquals("Det er sandelig ikke godt", actual);
   }
 
   @Test
   public void removeKraftedme() {
-    String actual = ex4.removeBadword("Det er kraftedme ikke godt");
+    String actual = ex4.exchangeBadword("Det er kraftedme ikke godt");
     assertEquals("Det er sandelig ikke godt", actual);
   }
 }

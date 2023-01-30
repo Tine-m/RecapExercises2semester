@@ -1,6 +1,7 @@
 public class Exercise4 {
 
-  public String removeBadword(String text) {
+  // Exchange bad word with nicer word
+  public String exchangeBadword(String text) {
     String censuredText=text;
     if (text.contains("sgu")) {
       censuredText = text.replaceAll("sgu", "sandelig");
